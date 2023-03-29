@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>은지지</title>
+  <style>
+    .blue{
+      color: blue;
+      background-color: yellow;
+      height: 100px;
+      width: 100px;
+      font-weight: 500px;
+      border: 1px solid red;
+      text-align: center;
+      animation: move 2s infinite ;
+    }
+    @keyframes move{
+      0%{
+        transform: translate(0,0);
+      }
+      50%{
+        transform: translate(0,100px) ;
+        border-radius:50%;
+        background-color: skyblue0;
+      }
+      100%{
+        transform: translate(0,0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>은지바보</h2>
+  <hr>
+  <div class="blue"><br><br> 바보 ㅋ</div>
+</body>
+</html>

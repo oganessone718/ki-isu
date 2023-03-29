@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Class&Element</title>
+  <style>
+    a{
+      font-size: 30px;
+    }
+    a:link{
+      color: cyan;
+    }
+    a:visited{
+      color: red;
+    }
+    a:hover{
+      color: blue;
+      font-weight: 300px;
+    }
+    fieldset:hover{
+      background-color: lightblue;
+      box-shadow: 0 0 20px gray;
+    }
+    a:active{
+      color: yellow;
+    }
+    .field{
+      margin-bottom: 10px;
+    }
+    input:focus{
+      outline: none;
+      border: 3px solid red;
+      box-shadow: 0 0 20px pink;
+    }
+    li:nth-child(even){
+      background-color:teal;
+    }
+    li:not(.target){
+      font-size: 50px;
+    }
+    .required::after{
+      content: '*';
+      margin-right: 2px;
+      color: red;
+      font-size: 10px;
+    }
+    [data-tooltip]{
+      position: relative;
+    }
+    [data-tooltip]:hover::after{
+      content: attr(data-tooltip);
+      position: absolute;
+      top: 0px;
+      left: 50px;
+      background-color: rgba(0, 0, 0, 0.281);
+      color: white;
+      width: 300px;
+    }
+    .letter::first-letter{
+      font-size: 60px;
+      color: blue;
+    }
+    .line::first-line{
+      font-size: 60px;
+      color: blue;
+      background-color: yellow;
+    }
+    p::selection{
+      background-color: gray;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <fieldset>
+    <legend>Pseudo Class</legend>
+    <div><a href="http://www.naver.com">Naver</a></div>
+    <a href="http://www.kakao.com">Kakao</a>
+  </fieldset>
+
+  <fieldset>
+    <legend> focus,before,after </legend>
+    <div class="field">
+      <label class="required" for="name">name</label>
+      <input type="text" id="name">
+    </div>
+    <div class="field">
+      <label class="required" for="age">age</label>
+      <input type="text" id="age">
+    </div>
+    <button data-tooltip=" Click this button and send the information" >send</button>
+  </fieldset>
+
+  <fieldset>
+    <legend>nth-child,not</legend>
+    <ul>
+      <li class="target">1content</li>
+      <li>2content</li>
+      <li>3content</li>
+      <li>4content</li>
+      <li>5content</li>
+    </ul>
+  </fieldset>
+
+  <fieldset>
+    <legend> first-letter, first-line, section </legend>
+    <div >
+      <p class="letter">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eveniet sed et ab libero repudiandae natus voluptates mollitia ipsum harum optio ea aut quo consequatur quasi ullam iure, animi aliquam.
+        Tempore, a velit unde quia perspiciatis impedit totam. Quos totam sapiente placeat iste libero impedit omnis rerum odio illum inventore ratione, consequatur eius, excepturi labore veniam. Aliquid sequi neque omnis!
+        Voluptatum, animi! Fugit beatae repudiandae in quidem culpa natus accusantium nesciunt voluptas qui minus facilis doloremque, neque maiores modi? Aut est placeat nihil repellat. Sequi unde deserunt quis dignissimos esse?
+        Quasi quam placeat dolore animi rerum vitae perferendis esse iusto neque ut sit voluptatem quidem, ipsam dolores exercitationem corrupti doloribus natus nesciunt nostrum beatae molestiae aliquam ab eaque? Iste, fugit.
+        Voluptas fugiat dolore placeat sit illum aspernatur officiis quibusdam recusandae similique exercitationem nisi quos excepturi ea animi, voluptate iusto! Ab deserunt temporibus, inventore officia iste nam ratione recusandae molestias saepe.
+        Sequi placeat ratione dolorum impedit! Sint nam necessitatibus nemo doloremque vel, alias corrupti voluptates aut dolores libero iusto asperiores! Tenetur ex quas officia quia id hic optio explicabo molestias recusandae.
+      </p>
+      <p class="line">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eveniet sed et ab libero repudiandae natus voluptates mollitia ipsum harum optio ea aut quo consequatur quasi ullam iure, animi aliquam.
+        Tempore, a velit unde quia perspiciatis impedit totam. Quos totam sapiente placeat iste libero impedit omnis rerum odio illum inventore ratione, consequatur eius, excepturi labore veniam. Aliquid sequi neque omnis!
+        Voluptatum, animi! Fugit beatae repudiandae in quidem culpa natus accusantium nesciunt voluptas qui minus facilis doloremque, neque maiores modi? Aut est placeat nihil repellat. Sequi unde deserunt quis dignissimos esse?
+        Quasi quam placeat dolore animi rerum vitae perferendis esse iusto neque ut sit voluptatem quidem, ipsam dolores exercitationem corrupti doloribus natus nesciunt nostrum beatae molestiae aliquam ab eaque? Iste, fugit.
+        Voluptas fugiat dolore placeat sit illum aspernatur officiis quibusdam recusandae similique exercitationem nisi quos excepturi ea animi, voluptate iusto! Ab deserunt temporibus, inventore officia iste nam ratione recusandae molestias saepe.
+        Sequi placeat ratione dolorum impedit! Sint nam necessitatibus nemo doloremque vel, alias corrupti voluptates aut dolores libero iusto asperiores! Tenetur ex quas officia quia id hic optio explicabo molestias recusandae.
+      </p>
+    </div>
+  </fieldset>
+</body>
+</html>

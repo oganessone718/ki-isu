@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector Combination</title>
+  <style>
+    /*section li{
+      color: blue;
+    }
+    section span{
+      color: red;
+    }*/
+    section > ul > li{
+      color: gray;
+    }
+    p~span{
+      color: red;
+    }
+    p+code{
+      font-size: 50px;
+    }
+    .first + li{
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>Health</h1>
+    <hr>
+    <p>Wicipedia, Our own dictionary</p>
+    <p>Health basically refer to health, and in addition to that, it refers to: </p>
+    <ul>
+      <li>medical care</li>
+      <li>health</li>
+      <li>stamina</li>
+      <li>Fashion health</li>
+      <li>health club</li>
+      <li>google health: personal medical infomation service
+        <span>google</span>  provides</li>
+    </ul>
+  </section>
+  <hr>
+  <section>
+    <span>This isn't red<br></span> 
+    <p>Heree is a paragraph<br></p> 
+    <code>Here is where the code is<br></code> 
+    <span>Now, it's red<br></span> 
+    <code>There is a code<br></code> 
+    <span>It's also red<br></span> 
+  </section>
+  <hr>
+  <ul>
+    <li class="first">one</li>
+    <li>two</li>
+    <li>three</li>
+  </ul>
+</body>
+</html>

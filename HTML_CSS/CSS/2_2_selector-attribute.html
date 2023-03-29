@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector Attribute</title>
+  <style>
+    h2[class]{
+      font-size: 30px;
+    }
+    [target]{
+      color: green;
+    }
+    h2[class="Naver--title"]{
+      color: red;
+    }
+    a[href*="www"]{
+      text-decoration: none;
+    }
+    h2[class^="Goo"]{
+      color: blue;
+    }
+    a[href$="k.com"]{
+      color: aqua;
+    }
+    h2[class ~= title]{
+      color: violet;
+      font-weight: 100;
+    }
+  </style>
+</head>
+<body>
+  <h2 class="Naver--title">Naver</h2>
+  <a href="http://www.naver.com">Naver</a>
+  <h2 class="Google--title">Google</h2>
+  <a href="http://www.google.com" target="_blank">google</a>
+  <h2 class="Facebook--title">Facebook</h2>
+  <a href="http://www.facebook.com">Facebook</a>
+  <h2>JM</h2>
+  <h2 class="text title JM">Thanks</h2>
+</body>
+</html>

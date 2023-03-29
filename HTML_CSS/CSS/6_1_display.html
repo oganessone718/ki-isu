@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display</title>
+  <style>
+    div,h2{
+      border: 1px solid black;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      /* display: none; */
+      /* visibility: hidden; */
+    }
+    a,span{
+      border: 1px solid red;
+      width: 100px;
+      height: 100px;
+    }
+    article> div, article>span{
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>display block</h1>
+  <div>content</div>
+  <div>content</div>
+  <div>content</div>
+  <h2>title</h2>
+
+  <h1>display inline</h1>
+  <span>content</span>
+  <span>content</span>
+  <span>content</span>
+  <a href="">Naver</a>
+
+  <h1>inline block</h1>
+  <article>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <span>content</span>
+    <span>content</span>
+    <span>content</span>
+  </article>
+
+</body>
+</html>

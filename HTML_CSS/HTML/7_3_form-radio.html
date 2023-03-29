@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>radio checkbox</title>
+</head>
+<body>
+  <form action="/signup">
+    <fieldset>
+      <legend>Choose all colors you like</legend>
+        <ul>
+      <li>
+        <label for="red">red</label>
+        <input type="checkbox" id="red" value="red">
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <label for="blue">blue</label>
+        <input type="checkbox" id="blue" value="blue">
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <label for="orange">orange</label>
+        <input type="checkbox" id="orange" value="orange">
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <label for="green">green</label>
+        <input type="checkbox" id="green" value="green">
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset>
+    <legend>How to deliver?</legend>
+    <ul>
+      <li>
+        <label for="free">free</label>
+        <input type="radio" id="free" value="free" name="deliver">
+      </li>
+      <li>
+        <label for="pay">pay</label>
+        <input type="radio" id="pay" value="pay" name="deliver">
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset>
+    <legend>resume</legend>
+    <textarea name="" id="" cols="80" rows="5">우효?www</textarea>
+  </fieldset>
+  <fieldset>
+    <legened>select goods to deliver</legened>
+    <ul>
+      <li>
+        <select name="goods" id="goods" multiple>
+          <option value="apple_10kg">apple 10kg</option>
+          <option value="apple_20kg" selected>apple 20kg</option>
+          <option value="apple_30kg">apple 30kg</option>
+          <option value="apple_40kg">apple 40kg</option>
+          <option value="apple_50kg">apple 50kg</option>
+        </select>
+      </li>
+      <li>
+        <label for="flavors">choose the flavor</label>
+        <input list="flavor" id="flavors" name="flavor">
+        <datalist id="flavor">
+          <option value="choco"></option>
+          <option value="strawberry"></option>
+          <option value="mint"></option>
+        </datalist>
+      </li>
+    </ul>
+  </fieldset>
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+  <button type="button" onclick="alert('Hello world!')">Just BUTTON</button>
+  </form>
+</body>
+</html>

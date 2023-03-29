@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form2</title>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>Input Tag</legend>
+      <ul>
+        <li>
+          <label for="email">email</label>
+          <input type="email"  id="email"  placeholder="email입력">
+        </li>
+        <li>
+          <label for="text">text</label>
+          <input type="email"  id="text" readonly value="aa">
+        </li>
+        <li>
+          <label for="tel">tel</label>
+          <input type="tel" id="tel" value="aad" disabled>
+        </li>
+        <li>
+          <label for="url">url</label>
+          <input type="url" id="url" autofocus>
+        </li>
+        <li>
+          <label for="number">number</label>
+          <input type="number" id="number"  min="5" max="10">
+        </li>
+        <li>
+          <label for="range">range</label>
+          <input type="range" id="range" >
+        </li>
+        <li>
+          <label for="password">password</label>
+          <input type="password" id="password" >
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>About date</legend>
+      <ul>
+        <li>
+          <label for="date">date</datagrid></label>
+          <input type="date" id="date" min="2021-07-10" max="2021-07-15">
+        </li>
+        <li>
+          <label for="month">month</datagrid></label>
+          <input type="month" id="month" min="2021-07" max="2021-09">
+        </li>
+        <li>
+          <label for="week">week</datagrid></label>
+          <input type="week" id="week" >
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>About time</legend>
+      <ul>
+        <li>
+          <label for="time">time</label>
+          <input type="time" id="time" min="16:00" max="22:00">
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>ect</legend>
+      <ul>
+        <li>
+          <input type="file" multiple>
+        </li>
+        <li>
+          <input type="hidden" name="" value="">
+        </li>
+      </ul>
+    </fieldset>
+    <input type="submit" value="submit">
+  </form>
+</body>
+</html>

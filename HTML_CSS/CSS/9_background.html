@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background</title>
+  <style>
+    .red{
+      background-color: red;
+      width: 100px;
+      height: 100px;
+    }
+    .image{
+      background-image: url(../assets/image/일러스트.png);
+      width: 200px;
+      height: 400px;
+      background-repeat: repeat;
+      border: 1px solid black;
+      background-position: center left;
+      display: inline-block;
+      overflow-y: scroll;
+    }
+    .attachment-scroll{
+      background-attachment: scroll;
+    }
+    .attachment-fixed{
+      background-attachment: fixed;
+    }
+    .attachment-local{
+      background-attachment: local;
+    }
+    .background-size{
+      width: 300px;
+      height: 300px;
+      background-image: url(../assets/image/일러스트2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border: 10px solid black;
+    }
+    .linear-gradient{
+      width: 500px;
+      height: 200px;
+      border: 10px solid black;
+      background: linear-gradient(15deg ,red,blue 50%,white 90%,black);
+    }
+    .radial-gradient{
+      width: 500px;
+      height: 200px;
+      border: 10px solid black;
+      background: radial-gradient(circle at 70%, black 30%,green 50%,white);
+    }
+  </style>
+</head>
+<body>
+  <h3>background-color</h3>
+  <div class="red"></div>
+
+  <h3>background-image</h3>
+  <div class="image attachment-scroll">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsa aut animi! Maiores minima veniam alias consequuntur itaque autem minus vero omnis voluptates ipsa cupiditate laborum architecto, nobis quaerat repudiandae?
+    Amet modi, adipisci quidem perspiciatis saepe laudantium, blanditiis nesciunt eius, magni ipsam incidunt unde? Repudiandae tempore omnis necessitatibus consequuntur magni amet soluta provident quidem unde voluptatibus nemo perferendis, suscipit itaque.
+    Cumque molestias illum eos repudiandae! Dolores animi tempore facere accusamus illo, tempora amet doloremque praesentium repellat quisquam, quos fugiat exercitationem natus reiciendis nihil inventore! Inventore tempore voluptatum error id omnis?
+    Omnis aut magnam vel qui reiciendis eos quisquam sint, cupiditate alias quia, velit exercitationem doloribus doloremque. Magnam accusantium quidem, veritatis, a quae eligendi similique perferendis laboriosam nemo repudiandae libero minima.
+    Rerum ullam, ab aliquid quae animi quisquam, explicabo totam expedita numquam dolorem nemo minus mollitia libero omnis, asperiores esse iste iure. Quibusdam eum vel a? Alias ad velit maxime tempore.
+    Maiores eligendi voluptatum repellat saepe minus quas excepturi iusto eius voluptas odit itaque quaerat nihil aspernatur necessitatibus quod hic aliquam molestias illum, asperiores laborum. Repudiandae quo veniam voluptatem enim dignissimos!
+    Incidunt, ab quidem repellendus odio commodi quos totam ducimus dolores doloribus. Itaque explicabo temporibus ratione distinctio natus, eaque non ducimus, dolores veritatis minus porro id incidunt, perferendis sint nihil velit.
+    Reprehenderit doloribus eligendi sunt ratione? Quo beatae aliquam laboriosam enim cumque, pariatur eius placeat voluptates, nesciunt eveniet laborum aut quam sint rem eaque amet ex. Qui et alias similique doloremque!
+  </div>
+  <div class="image attachment-fixed">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsa aut animi! Maiores minima veniam alias consequuntur itaque autem minus vero omnis voluptates ipsa cupiditate laborum architecto, nobis quaerat repudiandae?
+    Amet modi, adipisci quidem perspiciatis saepe laudantium, blanditiis nesciunt eius, magni ipsam incidunt unde? Repudiandae tempore omnis necessitatibus consequuntur magni amet soluta provident quidem unde voluptatibus nemo perferendis, suscipit itaque.
+    Cumque molestias illum eos repudiandae! Dolores animi tempore facere accusamus illo, tempora amet doloremque praesentium repellat quisquam, quos fugiat exercitationem natus reiciendis nihil inventore! Inventore tempore voluptatum error id omnis?
+    Omnis aut magnam vel qui reiciendis eos quisquam sint, cupiditate alias quia, velit exercitationem doloribus doloremque. Magnam accusantium quidem, veritatis, a quae eligendi similique perferendis laboriosam nemo repudiandae libero minima.
+    Rerum ullam, ab aliquid quae animi quisquam, explicabo totam expedita numquam dolorem nemo minus mollitia libero omnis, asperiores esse iste iure. Quibusdam eum vel a? Alias ad velit maxime tempore.
+    Maiores eligendi voluptatum repellat saepe minus quas excepturi iusto eius voluptas odit itaque quaerat nihil aspernatur necessitatibus quod hic aliquam molestias illum, asperiores laborum. Repudiandae quo veniam voluptatem enim dignissimos!
+    Incidunt, ab quidem repellendus odio commodi quos totam ducimus dolores doloribus. Itaque explicabo temporibus ratione distinctio natus, eaque non ducimus, dolores veritatis minus porro id incidunt, perferendis sint nihil velit.
+    Reprehenderit doloribus eligendi sunt ratione? Quo beatae aliquam laboriosam enim cumque, pariatur eius placeat voluptates, nesciunt eveniet laborum aut quam sint rem eaque amet ex. Qui et alias similique doloremque!
+  </div>
+  <div class="image attachment-local">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsa aut animi! Maiores minima veniam alias consequuntur itaque autem minus vero omnis voluptates ipsa cupiditate laborum architecto, nobis quaerat repudiandae?
+    Amet modi, adipisci quidem perspiciatis saepe laudantium, blanditiis nesciunt eius, magni ipsam incidunt unde? Repudiandae tempore omnis necessitatibus consequuntur magni amet soluta provident quidem unde voluptatibus nemo perferendis, suscipit itaque.
+    Cumque molestias illum eos repudiandae! Dolores animi tempore facere accusamus illo, tempora amet doloremque praesentium repellat quisquam, quos fugiat exercitationem natus reiciendis nihil inventore! Inventore tempore voluptatum error id omnis?
+    Omnis aut magnam vel qui reiciendis eos quisquam sint, cupiditate alias quia, velit exercitationem doloribus doloremque. Magnam accusantium quidem, veritatis, a quae eligendi similique perferendis laboriosam nemo repudiandae libero minima.
+    Rerum ullam, ab aliquid quae animi quisquam, explicabo totam expedita numquam dolorem nemo minus mollitia libero omnis, asperiores esse iste iure. Quibusdam eum vel a? Alias ad velit maxime tempore.
+    Maiores eligendi voluptatum repellat saepe minus quas excepturi iusto eius voluptas odit itaque quaerat nihil aspernatur necessitatibus quod hic aliquam molestias illum, asperiores laborum. Repudiandae quo veniam voluptatem enim dignissimos!
+    Incidunt, ab quidem repellendus odio commodi quos totam ducimus dolores doloribus. Itaque explicabo temporibus ratione distinctio natus, eaque non ducimus, dolores veritatis minus porro id incidunt, perferendis sint nihil velit.
+    Reprehenderit doloribus eligendi sunt ratione? Quo beatae aliquam laboriosam enim cumque, pariatur eius placeat voluptates, nesciunt eveniet laborum aut quam sint rem eaque amet ex. Qui et alias similique doloremque!
+  </div>
+  <h3>Backgroud-size</h3>
+  <div class="background-size"></div>
+
+  <h3>gradient</h3>
+  <div class="linear-gradient"></div>
+
+  <h3>gradient</h3>
+  <div class="radial-gradient"></div>
+
+  <div style="height: 1000px; width:10px; background-color: red;"></div>
+  
+</body>
+</html>

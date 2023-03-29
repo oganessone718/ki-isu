@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model</title>
+  <style>
+    div.content{
+      background-color: lightgray;
+      width: 100px;
+      height: 100px;
+      padding: 20px;
+      border: 10px solid black;
+      margin: 40px;
+    }
+    span{
+      border: 1px solid red;
+      width: 100px;
+      height: 100px;
+      display: block;
+    }
+    div.padding{
+      border: 1px solid black;
+      padding: 20px 100px;
+    }
+    div.margin{
+      border: 1px solid red;
+      margin-top: 20px;
+    }
+    .shape{
+      border: 1px solid red;
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content"></div>
+  <span>Hello JM</span>
+  <div class="padding">
+    동해 물과 백두산이 마르고 닳도록
+    하느님이 보우하사 우리나라 만세.
+    무궁화 삼천리 화려 강산
+    대한 사람, 대한으로 길이 보전하세.
+  </div>
+  <div class="margin">
+    동해 물과 백두산이 마르고 닳도록
+    하느님이 보우하사 우리나라 만세.
+    무궁화 삼천리 화려 강산
+    대한 사람, 대한으로 길이 보전하세.
+  </div>
+  <div class="shape" style="margin-bottom: 100px;"></div>
+  <div class="shape"></div>
+</body>
+</html>
